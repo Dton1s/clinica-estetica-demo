@@ -21,7 +21,7 @@ export function Hero({ onAppointment }: { onAppointment: () => void }) {
           <Image className="hero-photo" src={data.image} alt={data.imageAlt} fill priority sizes="(max-width: 760px) 100vw, 54vw" />
           <div className="hero-photo-scrim" />
           <figcaption><span>{data.imageIndex}</span><span>{data.imageCaption}</span></figcaption>
-          <div className="hero-note"><span className="note-flower">✳</span><span>Tu ritual<br />comienza aquí</span></div>
+          <div className="hero-note"><span className="note-flower">✳</span><span>{data.noteTitle}<br />{data.noteLine}</span></div>
         </figure>
       </div>
       <div className="hero-bottom page-width"><span>ESTÉTICA CONSCIENTE</span><span className="bottom-line" /><span>PERSONAL · NATURAL · CONTEMPORÁNEA</span></div>
